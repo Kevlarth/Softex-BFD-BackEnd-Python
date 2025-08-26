@@ -14,9 +14,10 @@ Por fim imprima o tabuleiro na tela, deixando cada linha da matriz abaixo da out
 """
 
 
-TABULEIRO: list[list] = [[] for x in range(8) for _ in range(8)]
-PEÇAS: list[str] = ["tor","cav","bis","rai","rei","bis","cav","torre","pea","pea","pea","pea","pea","pea","pea","pea"]
-for i in range(len(PEÇAS)):
-    TABULEIRO[i] = PEÇAS[i]
+TABULEIRO: list[list] = [[" "] for x in range(8) for _ in range(8)]
+PECAS: list[str] = ["tor","cav","bis","rai","rei","bis","cav","tor","pea","pea","pea","pea","pea","pea","pea","pea"]
+for i in range(len(PECAS)):
+    TABULEIRO[i] = PECAS[i]
+    TABULEIRO[i+48] = PECAS[i]
 for j in range(0, len(TABULEIRO), 8):
     print(TABULEIRO[j:j+8])
