@@ -4,7 +4,7 @@ contato: dict = {"nome": "Ana", "email": "ana@email.com"}
 verificar: str = "telefone"
 chave_encontrada = False
 
-for item in contato.keys():
+for item in contato:
     if item == verificar:
         chave_encontrada = True
         break 
