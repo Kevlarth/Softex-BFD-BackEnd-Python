@@ -15,9 +15,20 @@ Por fim imprima o tabuleiro na tela, deixando cada linha da matriz abaixo da out
 
 
 TABULEIRO: list[list] = [[" "] for x in range(8) for _ in range(8)]
-PECAS: list[str] = ["tor","cav","bis","rai","rei","bis","cav","tor","pea","pea","pea","pea","pea","pea","pea","pea"]
+PEOES: list[str] = ["pea"] * 8
+PECAS: list[str] = ["tor","cav","bis","rai","rei","bis","cav","tor"]
 for i in range(len(PECAS)):
     TABULEIRO[i] = PECAS[i]
-    TABULEIRO[i+48] = PECAS[i]
+    TABULEIRO[i+8] = PEOES[i]
+    TABULEIRO[i+48] = PEOES[i]
+    TABULEIRO[i+56] = PECAS[i]
 for j in range(0, len(TABULEIRO), 8):
     print(TABULEIRO[j:j+8])
+
+def mover_peca(peca1: int, peca2: int) -> None:
+    TABULEIRO[peca1], TABULEIRO[peca2] = TABULEIRO[peca2], TABULEIRO[peca1]
+    print()
+    for j in range(0, len(TABULEIRO), 8):
+        print(TABULEIRO[j:j+8])
+
+mover_peca(1, 18)
