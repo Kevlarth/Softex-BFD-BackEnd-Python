@@ -3,7 +3,7 @@
 
 class Cachorro:
     especie: str = "Canis familiaris"
-    def __init__(self, nome: str, idade: int):
+    def __init__(self, nome: str, idade: int) -> None:
         self.nome = nome
         self.idade = idade
 

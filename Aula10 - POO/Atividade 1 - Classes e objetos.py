@@ -2,11 +2,11 @@
 # Em seguida, crie dois objetos dessa classe e imprima os valores de seus atributos.
 
 class Pessoa:
-    def __init__(self, nome: str, idade: int):
+    def __init__(self, nome: str, idade: int) -> None:
         self.nome = nome
         self.idade = idade
     
-    def __str__(self):
+    def __str__(self) -> None:
         return f"Nome: {self.nome}\nIdade: {self.idade}"
 
 individuo: Pessoa = Pessoa("Jurandir", 84)

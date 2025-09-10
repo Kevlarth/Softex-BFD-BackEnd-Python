@@ -2,18 +2,18 @@
 # Teste o retorno e imprima mensagens adequadas.
 
 class ContaBancaria:
-    def __init__(self, titular: str, saldo: float = 0):
+    def __init__(self, titular: str, saldo: float = 0) -> None:
         self.titular = titular
         self.saldo = saldo
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Conta corrente do Titular {self.titular}, possui saldo de: {self.saldo:.2f}"
 
-    def depositar(self, valor: float):
+    def depositar(self, valor: float) -> str:
         self.saldo += valor
         return f"Operação de depósito no valor de {valor:.2f} efetivado."
 
-    def sacar(self, valor: float):
+    def sacar(self, valor: float) -> tuple[str, bool]:
         if self.saldo >= valor:
             self.saldo -= valor
             return (f"Operação de saque no valor de {valor:.2f} efetivado.", True)

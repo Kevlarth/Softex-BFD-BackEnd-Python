@@ -2,12 +2,12 @@
 # Use o método __init__ para inicializar esses valores. Crie três objetos e mostre suas informações.
 
 class Carro:
-    def __init__(self, marca: str, modelo: str, ano: int):
+    def __init__(self, marca: str, modelo: str, ano: int) -> None:
         self.marca = marca
         self.modelo = modelo
         self.ano = ano
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Marca: {self.marca}\nModelo: {self.modelo}\nAno: {self.ano}"
 
 carro1 = Carro("Toyota", "Corolla", 2020)

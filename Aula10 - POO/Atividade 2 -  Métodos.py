@@ -2,14 +2,14 @@
 # Teste o método chamando-o a partir de um objeto.
 
 class Pessoa:
-    def __init__(self, nome: str, idade: int):
+    def __init__(self, nome: str, idade: int) -> None:
         self.nome = nome
         self.idade = idade
     
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Nome: {self.nome}\nIdade: {self.idade}"
     
-    def apresentar(self):
+    def apresentar(self) -> str:
         return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
 
 individuo: Pessoa = Pessoa("Jurandir", 84)
