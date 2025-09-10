@@ -27,7 +27,3 @@ print(contaBB.depositar(250.00))
 print(contaBB)
 print(contaBB.sacar(150.00))
 print(contaBB)
-
-
-# Modifique a classe ContaBancaria para que o método sacar retorne True se a operação for bem-sucedida e False caso contrário.
-# Teste o retorno e imprima mensagens adequadas.
