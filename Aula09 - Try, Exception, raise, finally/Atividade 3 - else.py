@@ -1,4 +1,5 @@
-# Crie um programa que peça ao usuário um número inteiro. Se a conversão for bem-sucedida, mostre uma mensagem usando o bloco else.
+# Crie um programa que peça ao usuário um número inteiro.
+# Se a conversão for bem-sucedida, mostre uma mensagem usando o bloco else.
 
 try:
     inteiro: int = (int(input("Digite um número inteiro: ")))

@@ -1,4 +1,5 @@
-# Crie uma função dividir(a, b) que lance (raise) uma exceção ZeroDivisionError se b for igual a zero. Caso contrário, retorne o resultado da divisão.
+# Crie uma função dividir(a, b) que lance (raise) uma exceção ZeroDivisionError se b for igual a zero.
+# Caso contrário, retorne o resultado da divisão.
 
 def dividir(a: int, b: int) -> float:
     if b == 0:
@@ -10,4 +11,3 @@ try:
     print(f"Resultado: {resultado}")
 except ZeroDivisionError as e:
     print(f"Erro: {e}")
-
